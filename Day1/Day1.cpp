@@ -7,7 +7,7 @@
 using namespace std;
 int main(){
     ifstream input;
-    input.open("input.txt");
+    input.open("input.txt");//test
 
 
     string inputLine;
