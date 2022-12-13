@@ -16,5 +16,6 @@ class LinkedList{
     public:
         LinkedList();
         void insertAtEnd(char);
+        void pop();
         Node* getHead();
 };
