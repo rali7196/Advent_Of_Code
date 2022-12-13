@@ -1,14 +1,14 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include <stack>
 
-
-#include "LinkedList.h"
+// #include "LinkedList.h"
 
 using namespace std;
 int main(){
     //making starting stacks
-    LinkedList stacks[9];
+    stack<char> stacks[9];
 
     ifstream input;
     input.open("input.txt");
@@ -37,6 +37,11 @@ int main(){
         }
 
     }
+    //for rest of logic, parse strings using strtok
+    //get first, second, and third number
+    //first number is how many times to pop second number
+    //second number corresponds to stack
+    //third number corresponds to target stack 
     return 0;
 }
 /*

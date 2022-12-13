@@ -1,5 +1,8 @@
 #include <string>
 
+#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
+
 class Node{
     public:
         char val;
@@ -19,3 +22,4 @@ class LinkedList{
         void pop();
         Node* getHead();
 };
+#endif
