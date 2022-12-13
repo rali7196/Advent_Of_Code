@@ -22,6 +22,11 @@ int main(){
 
         int startRange2 = stoi(strtok(range2, "-"));
         int endRange2 = stoi(strtok(NULL, "-"));
+
+        if(startRange1 <= startRange2 && endRange1 >= endRange2){
+            counter++;
+        }
     }
+    cout << counter << endl;
 
 }
