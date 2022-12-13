@@ -45,6 +45,7 @@ int main(){
     char* cInputLine;
     while(getline(input, inputLine)){
         cInputLine = strdup(inputLine.c_str());
+        
         char* range1 = strtok(cInputLine, ",");
         char* range2 = strtok(NULL, ",");
 
@@ -53,7 +54,16 @@ int main(){
 
         int startRange2 = stoi(strtok(range2, "-"));
         int endRange2 = stoi(strtok(NULL, "-"));
-        
+
+        //if startrange 2 falls within start range 1 and end range1 
+        if(startRange2 >= startRange1 && startRange2 <= endRange1){
+            counter++;
+        }
+        //if startrange 1 falls within start range 2 and end range 2
+        else if(startRange1 >= startRange2 && startRange1 <= endRange2){
+            counter++;
+        }        
+
     }
     cout << counter << endl;
 }
