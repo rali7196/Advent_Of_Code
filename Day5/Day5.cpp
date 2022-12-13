@@ -1,12 +1,14 @@
-#include <stack>
 #include <string>
-#include <fstream>
 #include <iostream>
+#include <fstream>
+
+
+#include "LinkedList.h"
 
 using namespace std;
 int main(){
     //making starting stacks
-    stack<char> stacks[9];
+    LinkedList stacks[9];
 
     ifstream input;
     input.open("input.txt");
