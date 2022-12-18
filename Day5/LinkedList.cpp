@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "LinkedList.h"
 
 LinkedList::LinkedList(){
@@ -25,9 +27,17 @@ void LinkedList::insertAtEnd(char data){
     }
     else{
         Node* dummy = head;
-        while(dummy->next){
+        while(dummy->next){//find end of list
             dummy = dummy->next;
         }
         dummy->next = to_insert;
+    }
+}
+
+void LinkedList::printList(){
+    Node* dummy = head;
+    while(dummy){
+        std::cout << dummy->val << " ";
+        dummy = dummy->next;
     }
 }
