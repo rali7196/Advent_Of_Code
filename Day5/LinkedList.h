@@ -21,5 +21,6 @@ class LinkedList{
         void insertAtEnd(char);
         void pop();
         Node* getHead();
+        void printList();
 };
 #endif
